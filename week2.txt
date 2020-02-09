@@ -1,0 +1,23 @@
+week 2 16/12/2019
+int --> memory -210000000 - 210000000
+long 4 byte
+long long == 2*long
+unsigned long long 0 - 4000000000 / เก็บ -1 ไม่ได้จะ overflow ใหญ่สุด
+-string(ตัวอักษร)
+char c = 'a' ; เก็บเป็นแอสกี้ ดังนั้น c = c+1 ; จะได้ b ไม่ error
+char เก็บตัวอักษร 255 ตัว (7 bit) เก็บเกิน = overflow
+string
+char name[] = "Proud" ; (ชาอาเล)
+-float
+float e = 0.1 ; or double f = 45.00 ;
+double ans = 1/2 = 0 /ผิด
+double ans = 1.0/2 = 0.5 /ถูก
+-การประกาศตัวแปร
+# define M_PI 3.14 ; การประกาศค่าคงที่ ไม่ต้องมี =
+# define while 20 ไม่ได้ เพราะ while loop จะใช้ไม่ได้ while มันจะเท่ากับ 20
+-การใช้ printf
+%d == int // %5d จองพื้นที่ไว้ 5 ช่อง
+%llu == unsigned long long
+%lf == long float // %.10lf ทศนิยม 5 ตำแหน่ง
+%c == char
+%s == char name[]
