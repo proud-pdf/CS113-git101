@@ -1,0 +1,27 @@
+week7 3/02/2020
+-การใช้ git และ github
+-git
+โดย computer ของเราต้องติดตั้ง git ก่อน
+ใข้คำสั่ง mkdir (making directory) ในการสร้าง directory
+cd คือ change directory เปลี่ยนที่อยู่
+การ git repository คือการ พิมพ์ git init จะเกิดไฟล์ .git มา ห้ามทำอะไร
+สร้างไฟล์ .txt ขึ้นมาและเพิ่มไฟล์โดยการ git add ชื่อ.txt และควรรตอบสถานะ(git statuus) ด้วย
+ตั้งค่าชื่อและอีเมลเพื่อระบุตัวผู้ commit
+    git config --global user.name "Your Name"
+    git config --global user.email "yourmail@..."
+Version/Snapshot/Checkpoint ไฟล์ คือพิมพ์ git commit -m "Add ชื่อ.txt"
+-git hub
+สร้าง New repository บน github
+กำหนดชื่อ และสามารถตั้งเป็นสาธารณะหรือไม่ก็ได้
+-เชื่อม com กับ github
+git remote add <ชื่อ remote เช่น origin> <git url>
+-up งานขึ้น github
+ใช้คำสั่ง git push -u origin master และใส่ username password github ของเราต้องติดตั้ง
+ตรวจสอบ checkpoint โดย git log --all --decorate --oneline --graph  (logadog)
+นำ Checkpoint เก่ากลับมาทำงานได้
+    กลับมาทั้งหมด git checkout <commit-id>
+    กลับมาบางไฟล์ git checkout <commit-id>  <ชื่อไฟล์>
+git push == upload to github
+-download
+พิมพ์ git clone และตามด้วย <git-url> ในโปรแกรม git ที่โหลดไว้
+git url อยู่ที่ download
