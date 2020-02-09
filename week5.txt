@@ -1,0 +1,30 @@
+week 5 13/01/2020
+-scanf
+scanf("รับรูปแบบไหน" ,&ต้องการแทนในตัวแปรไหน) ;
+%d รับ int
+%f รับ float
+%c รับอักขระ
+-loop นับดาว
+#include <stdio.h>
+#include <stdlib.h>
+int main ()
+{
+    char number[10] ;
+    int num , row , coll ;
+    fgets(number, 10, stdin) ; //รับค่าตัวเลขมา
+    num = atoi(number) ;
+    for (row = 0; row < num ; row++) {
+        for (coll = 0; coll <= row ; coll++) {
+            printf("*") ; //ปริ้นดาวแนวนอน
+        }
+        printf("\n") ; //ปริ้นแนวตั้ง
+    }
+    //ถอยหลัง
+    for (row = 0; row < num ; row++) {
+        for (coll = 0 ; coll < (num-1) - row ; coll++) {
+            printf("*") ; //ปริ้นดาวแนวนอน
+        }
+        printf("\n") ; //ปริ้นแนวตั้ง
+    }
+    return 0;
+}
