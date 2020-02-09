@@ -1,0 +1,67 @@
+week 3 23/12/2019
+# include <stdio.h>
+# include <stdlib.h>
+char name[5];
+int main()
+{
+    printf("Enter name : ");
+    //gets(name);
+    fgets(name, 5, stdin);
+    printf("%s\n", name);
+    int i = atoi(name);
+    printf("i = %d",i);
+}
+โค้ดด้านบนจะออกมาเป็น
+Enter name : Proud
+Prou
+i = 0
+
+# include <stdio.h>
+# include <stdlib.h>
+char name[5];
+int main()
+{
+    printf("Enter name : ");
+    //gets(name);
+    fgets(name, 5, stdin);
+    puts(name);
+    putchar(100);
+}
+ออกมาเป็น
+Enter name : Jaebeom
+Jaeb
+d
+fgets(name, 5, stdin); เลขไว้ ประมานบอกจำนวนช่องว่ารับกี่ช่อง enter(\n) นับเป็น 1 ช่อง
+gets(name); ไม่ระบุช่อง
+getchar == eat enter (\n)
+
+if else
+and = &&
+or = ||
+true = found
+false = !found
+จะต้องมี {} ex.
+if ( i == 20){
+        printf("i == 20\n");
+    }else if (i == 30){
+        printf("i == 30\n");
+    }else {
+        printf("else\n);
+    }
+
+-while loop
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    fgets(name, 5 , stdin);
+    int i = atoi(name);
+   
+    int count = 0 ;
+    while (count < i) {
+        printf("%d\n" , count);
+        count++;
+        //i++;
+        //++i; ให้ผลลัพธ์เหมือนกัน แต่ ++i ทำงานเร็วกว่า
+    }
+}
